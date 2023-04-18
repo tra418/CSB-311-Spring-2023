@@ -126,6 +126,8 @@ rm(list=ls(all=TRUE))
 cat("\014")
 
 DF <- read.csv("PakistanSuicideAttacks Ver 11 (30-November-2017).csv")
+library(here)
+load(here("Data","PakistanSuicideAttacks.RData"))
 class(DF)
 typeof(DF)
 View(DF)
